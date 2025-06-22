@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fall Detecter</string>
+
+    <!-- MainActivity strings -->
+    <string name="contact_saved">Contact saved</string>
+    <string name="invalid_phone_number">Please enter a valid phone number</string>
+    <string name="enter_contact_number">Please enter a contact number</string>
+    <string name="location_updated">Location updated</string>
+    <string name="location_format">Location: %.6f, %.6f\nAddress: %s</string>
+    <string name="location_error">Location: Error - </string>
+    <string name="location_error_toast">Location error: </string>
+    <string name="accel_format">Accel: X=%.2f Y=%.2f Z=%.2f</string>
+    <string name="gyro_format">Gyro: X=%.2f Y=%.2f Z=%.2f</string>
+    <string name="fall_detected_sending">FALL DETECTED! Sending alert…</string>
+    <string name="fall_detected_sent_with_location">Fall detected - Alert sent with location!</string>
+    <string name="fall_detected_sent_no_location">Fall detected - Alert sent (no location)</string>
+    <string name="permissions_denied">Some permissions denied. App may not work properly.</string>
+</resources>

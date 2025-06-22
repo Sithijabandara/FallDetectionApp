@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/liquid_gradient_bg"
+    android:padding="0dp"
+    android:weightSum="4.9">
+
+    <!-- Header -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        app:cardBackgroundColor="#00A6CB"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fall Detection System"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed by Sithija Bandara"
+                android:textColor="#E8F4FD"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Accelerometer Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#4ECDC4"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accelerometer"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/accelDataX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X-axis: Waiting..."
+                android:textColor="#E8F4FD"
+                android:fontFamily="monospace"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/accelDataY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Y-axis: Waiting..."
+                android:textColor="#E8F4FD"
+                android:fontFamily="monospace"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/accelDataZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Z-axis: Waiting..."
+                android:textColor="#E8F4FD"
+                android:fontFamily="monospace"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Gyroscope Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#4ECDC4"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gyroscope"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/gyroDataX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X-rotation: Waiting..."
+                android:textColor="#E8F4FD"
+                android:fontFamily="monospace"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/gyroDataY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Y-rotation: Waiting..."
+                android:textColor="#E8F4FD"
+                android:fontFamily="monospace"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/gyroDataZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Z-rotation: Waiting..."
+                android:textColor="#E8F4FD"
+                android:fontFamily="monospace"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Status Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFD93D"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Monitoring..."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#6C5B00" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/contactsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Emergency Contacts"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_gradient_purple"
+            android:elevation="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/settingsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="⚙️ Settings"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_gradient_purple"
+            android:elevation="4dp" />
+    </LinearLayout>
+</LinearLayout>
