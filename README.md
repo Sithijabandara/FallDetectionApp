@@ -166,12 +166,10 @@ This project is developed for educational use. You are free to use, modify, and 
 ## 👤 Author
 
 **Sithija Bandara**  
-Email: 
-GitHub: 
-
+Email: sithijabandara0@gmail.com
+GitHub:https://github.com/Sithijabandara
 ---
 
 ## 📽️ Optional Demo
 
-- GitHub Repo: 
-- YouTube Demo: 
+- GitHub Repo: https://github.com/Sithijabandara/FallDetectionApp.git
